@@ -43,7 +43,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.2;
   overflow-x: hidden;
-  background-color: violet;
+  background-color: #a892ee;
 }
 menu, ol, ul {
   list-style: none;

@@ -10,7 +10,7 @@ const TodoHeadBlock = styled.div`
   h1 {
     margin: 0;
     font-size: 36px;
-    color: #343a40;
+    color: #220131;
   }
   .day {
     margin-top: 4px;
@@ -18,7 +18,7 @@ const TodoHeadBlock = styled.div`
     font-size: 21px;
   }
   .tasks-left {
-    color: #20c997;
+    color: #510674;
     font-size: 18px;
     margin-top: 40px;
     font-weight: bold;
