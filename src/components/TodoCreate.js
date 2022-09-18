@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import { MdAdd } from "react-icons/md";
 import { useTodoDispatch, useTodoNextId, useTodoState } from "../TodoContext";
@@ -77,24 +77,11 @@ const Input = styled.input`
 `;
 
 function TodoCreate() {
-  const todos = useTodoState();
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
-  const [savedTodos, setSavedTodos] = useState(todos);
 
   const dispatch = useTodoDispatch();
   const nextId = useTodoNextId();
-
-  // useEffect(() => {
-  //   const getTodos = JSON.parse(localStorage.getItem("todos"));
-  //   if (getTodos) {
-  //     setSavedTodos(getTodos);
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("todos", JSON.stringify(todos));
-  // }, [todos]);
 
   const onToggle = () => setOpen(!open);
   const onChange = (e) => setValue(e.target.value);

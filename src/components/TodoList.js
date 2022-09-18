@@ -10,13 +10,18 @@ const TodoListContainer = styled.div`
   border-radius: 16px;
   overflow-y: auto;
   background: white;
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #a892ee;
+  }
 `;
 
-function TodoList({ storedTodos }) {
+function TodoList() {
   const todos = useTodoState();
-
   return (
     <TodoListContainer>
+      {todos.length === 0 ? <h2>할 일을 입력해주세요.</h2> : null}
       {todos.map((todo) => (
         <TodoItem key={todo.id} {...todo} />
       ))}

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TodoCreate from "./components/TodoCreate";
 import TodoHead from "./components/TodoHead";
 import TodoList from "./components/TodoList";
